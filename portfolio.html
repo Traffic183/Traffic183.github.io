@@ -1,65 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
 
 <head>
+
   <meta charset="UTF-8">
-  <title>Portfolio | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Bootstrap Portfolio</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" media="screen">
+
 </head>
 
 <body>
-
-  <header id="masthead">
+  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
     <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html" id="logo">Mara Levy</a>
+      </div>
+
+      <button class="navbar-toggler collapsed ml-auto" data-toggle="collapse" data-target="#page-nav-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="page-nav-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="test.html">Test</a>
+          </li>
+        </ul>
+      </div>
+  
     </div>
-  </header>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Portfolio</h1>
+  </nav>
 
-      <div class="work">
-        <img src="assets/images/oneb.png" height="205" width="275" alt="Word Guess">
-        
-        <h3>Word Guess</h3>
+  
+  <div class="container">
+    <main class="row">
+      <div class="col-md-8">
+        <article class="block">
+          <h1 class="block-header">Portfolio</h1>
+          <hr />
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="assets/images/bike_sculpture.jpeg" alt="">
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="assets/images/old_power_plant.jpg" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="assets/images/pleasant_valley_bridge.jpeg" alt="">
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="assets/images/mural_remains.jpg" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="assets/images/old_power_plant.jpg" alt="">
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="work">
-        <img src="assets/images/twob.png" height="205" width="275" alt="RPG Game">
-
-        <h3>RPG Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/threeb.png" height="205" width="275" alt="Trivia Game">
-
-        <h3>Trivia Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/fourb.png" height="205" width="275" alt="Rutgers Info Widget">
-
-        <h3>Rutgers Info Widget</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/fiveb.png" height="205" width="275" alt="Rock Paper Scissors">
-
-        <h3>Rock Paper Scissors</h3>
-      </div>
-
-    </section>
-
+    </main>
   </div>
-
-  <footer>
-    <div class="container">
-      &copy; 2018 
-    </div>
+  
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright 2018 Mara Levy
+    </p>
   </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script></script>
+
 </body>
 
 </html>

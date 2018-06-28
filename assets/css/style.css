@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/science-abstract.jpg");
+  background-image: url("../images/Time-Crystals.jpg");
   background-repeat: no-repeat;
   background-position: 0;
   background-size: cover;
@@ -10,7 +10,7 @@ body {
 .wrapper {
   max-width: 900px;
   margin: 0 auto;
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0.7); 
   padding: 30px;
 }
 

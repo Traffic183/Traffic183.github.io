@@ -1,53 +1,56 @@
-/* body {
-  background-image: url("../images/fantasy-crystal-field\ \(1\).jpg");
-  background-repeat: no-repeat;
-  background-position: 0;
-  background-size: cover;
-  padding: 20px;
-  color: white;
-  text-align: center;
-} */
-
 body {
-  background-image: url("../images/fantasy-crystal-field\ \(1\).jpg");
+ font-family: 'Nanum Gothic', sans-serif; 
+  font-weight: bold;
+  background-image: url(../images/barn.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0;
+  background-position: center;
   background-attachment: fixed;
-  padding: 20px;
-  color: white;
+}
+
+header{
   text-align: center;
 }
 
-.wrapper {
-  max-width: 900px;
-  margin: 30px auto;
-  background-color: rgba(0, 0, 255, 0.7);  
-  padding: 30px 20px;;
+h1 {
+  font-weight: 800;
 }
 
-.crystals {
-  display: flex;
-  justify-content: space-around; 
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 60px;
+#add-animal {
+  font-weight: bold;
 }
 
-.crystal {
-  border: 1px solid#78b9f0;
-  height: 200px;
-  width: 200px; 
-  border-radius: 4px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  transition: box-shadow 1s; 
+.animal-item {
+  padding: 10px;
+  float: left;
 }
 
-.crystal:hover {
-  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
-  transform: translate(5px, 40px);
-
+button,
+input[type="submit"] {
+  padding: 5px 10px;
+  margin: 0 10px 10px 0;
+  font-size: 16px;
+  color: #fff;
   cursor: pointer;
-  transition: box-shadow 1s, transform 1s; 
+  /* background: #659a98; */
+  background: #0a662e;
+  border: 0;
+  border-radius: 5px;
 }
 
+button:hover,
+input[type="submit"]:hover {
+  background: #063d1b;
+}
+
+button.active {
+  background: #063d1b;
+}
+
+#animals {
+  width: 80%;
+}
+
+form {
+  width: 20%;
+  float: right;
+}
